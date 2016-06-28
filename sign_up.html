@@ -1,0 +1,110 @@
+<!DOCTYPE html >
+<html >
+<script type="text/javascript">
+function chkpass() {
+var password=$("#pass").val();
+var confirmpassword=$("#copass").val();
+if(password!=confirmpassword)
+$("#divCheckPasswordMatch").html("password don't match!");
+else
+$("#divCheckPasswordMatch").html("Passwords match");
+}
+</script>
+<head id="ctl00_Head1">
+<link href="main.css" type="text/css" rel="stylesheet" />
+<title>WoCS- Wizard of computer science</title>
+ </head>
+ <body>
+ </div><div class="top_banner"><div class="in_banner"><div class=" logo"><img alt="jee" src="logo.jpg" /></div>
+ <div class="banner_text"><h1> WIZARD of COMPUTER SCIENCE </h1><h2>BIPIN TRIPHATI KUMAUN INSTITUTE OF TECHNOLOGY </h2></div>
+ <div class="logo"><img alt="logo" src="logo.jpg" /></div></div></div>
+ <div class="cleaner"></div>
+ <div id="menu"><div id="menu_in">
+ <ul>
+ <table bgcolor="lightblue" width=100%>
+ <tr>
+ <td><li><a href="default.html">Home </a></li></td>
+ <td><li><a title="Institute" target="_blank" href="http://kecua.ac.in">Institute</a></li></td>
+ <td><li><a title="Workshops" target="_blank" href="workshop.html">Workshops</a></li> </td>
+ <td><li><a title="Exams" href="exam.html" target="_blank">Exams</a></li> </td>
+ <td><li><a title="Lectures" href="lectures.html" target="_blank">NPTEL Lectures</a></li> </td>
+ <td><li><a title="login" href="login.html" target="_blank">LOGIN </a></li></td>
+ <td><li><a title="sign_up" href="sign_up.html" target="_blank">NEW USER?</a></li></td>
+ <td width=10%></td>
+ </tr>
+ </table>
+ </ul>
+ </div></div>
+<div id="container"><div class="left_col">
+ </div><div class="mid_col"><table border=0 width=100% length=100%>
+<form action="dummy.html" method="post" >
+<tr class="signup_table">
+<td width=50%>NAME</td>
+<td width=50%><input type="text" id="name" placeholder="enter your name" required="required" />
+</td>
+<td></td>
+</tr>
+<tr class="signup_table">
+<td width=50%>E-MAIL</td>
+<td width=50%><input type="email" id="mail" placeholder="enter your email" required="required"/>
+</td>
+<td></td>
+</tr>
+
+<tr class="signup_table">
+<td>PASSWORD</td>
+<td><div class="td"><input type="password" id="pass" placeholder="enter your password" required="required"/></div>
+</td>
+</tr>
+<tr class="signup_table">
+<td>CONFIRM PASSWORD</td>
+<td><div class="td"><input type="password" placeholder="confirm password" id="copass" onChange="chkpass();" /></div>
+<div class="RegistrationFormAlert" id="divCheckPasswordMatch"></div>
+</tr>
+<tr class="signup_table">
+<td rowspan=2>GENDER</td>
+<td class="signup_sub"><input type="radio"  name="group" value="Male" >Male
+</td>
+</tr>
+<tr class="signup_table">
+<td class="signup_sub">
+<input type="radio" name="group" value="Female" >Female</td>
+</tr>
+<tr>
+<td class="signup_table">
+BRANCH :
+</td>
+<td ><select name="branch" >
+<option value="CSE">Computer Science & Engineering</option>
+<option value="CHE">Chemical Engineering</option>
+<option value="ME">Mechanical Engineering</option>
+<option value="EE">Electrical Engineering</option>
+<option value="ECE">Electrical Communicaion Engineering</option>
+<option value="BCE">Bio-Chemical Engineering</option>
+<option value="CE">Civil Engineering</option>
+<option value="MCA">MCA</option>
+</select>
+</tr>
+<tr>
+<td class="signup_table">
+YEAR:
+</td>
+<td ><select name="year">
+<option value="CSE">1st</option>
+<option value="CHE">2nd</option>
+<option value="ME">3rd</option>
+<option value="EE">FINAL</option>
+</select>
+</tr>
+<tr>
+<td colspan=2> <center><input type="submit" value="SIGN UP " onClick="chkname()"></center>
+<CENTER>
+<INPUT TYPE="reset" VALUE = "RESET">
+</CENTER>
+</td>
+</tr>
+</div>
+</form>
+</table>
+</div><div class="cleaner"></div><div id="footer"><p>shubham_pandey</p></div></body>
+ </html>
